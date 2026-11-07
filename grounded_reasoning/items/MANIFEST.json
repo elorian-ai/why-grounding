@@ -1,0 +1,57 @@
+{
+  "countqa": {
+    "answer_type": "count",
+    "n": 1528,
+    "sha256": "9a0e3c82b14d4f97bef45adb8188e4a468b971a3f135f82374186f513e96f7a7"
+  },
+  "embspatial": {
+    "answer_type": "mcq",
+    "n": 3640,
+    "sha256": "6a31d360ca4c61ed7a1f3cdf430282c0a734755965d9d4db5e35db6eb96ba456"
+  },
+  "erqa": {
+    "answer_type": "mcq",
+    "n": 400,
+    "sha256": "5c38c07676153ff4dd4df1a8421725c0ab1cf109490f0a60ff021827bc1ddb7c"
+  },
+  "fsc147": {
+    "answer_type": "count",
+    "n": 1190,
+    "sha256": "7c94ebf340f579990c2b72f53d4d50bc6db59643f92be399900ca4205a52efc0"
+  },
+  "mmerw": {
+    "answer_type": "mcq",
+    "n": 1919,
+    "sha256": "326a564c89480e4e0e25a95e20d2f7ef41aa454ba9703e1ed671bcbf7bfc95bf"
+  },
+  "multihopspatial": {
+    "answer_type": "mcq",
+    "n": 1500,
+    "sha256": "615cfa07e05b487eed9649914aa4eb0c3af71be10c6bad1930e7875495db8500"
+  },
+  "omnispatial": {
+    "answer_type": "mcq",
+    "n": 1533,
+    "sha256": "6c0f24770604543674536e45ef98c838604821117e201f423865f5cdd9edd8d2"
+  },
+  "spatialmqa": {
+    "answer_type": "mcq",
+    "n": 1076,
+    "sha256": "73d93d7265fdda2b82cf616beefd4fce03773729153e399d089d7adbf87976a1"
+  },
+  "treebench": {
+    "answer_type": "mcq",
+    "n": 405,
+    "sha256": "188c5b65cb851cee52e3c332452a9489a40cd7aaced93c8a4495cdbf1154bb75"
+  },
+  "vsr": {
+    "answer_type": "mcq",
+    "n": 1222,
+    "sha256": "924d9ef1941397970d6b5fd5ae85dbd7ee28b690c303ab78ec98024aa29d2fcf"
+  },
+  "vstar": {
+    "answer_type": "mcq",
+    "n": 191,
+    "sha256": "41f67ac461ac4aaa76dd9897f14ad0961cc2d088366cebe9a3889c849176dfca"
+  }
+}

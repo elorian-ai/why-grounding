@@ -1,0 +1,40 @@
+# Nano Banana style templates for the BrickVision restyle (restyle.py tries them round-robin by item index,
+# in TEMPLATE_ORDER). Each prompt is a style paragraph only; restyle.py appends the per-scene STRUCTURE_LOCK
+# (ground-truth brick inventory) and BOUNDARY_NOTE.
+templates:
+  - id: window_desk
+    aggressiveness: low
+    prompt: >
+      Turn this synthetic isometric Lego render into a realistic photograph of
+      the same Lego build sitting on a wooden desk, lit by soft natural window
+      light from one side. Real ABS plastic material: subtle sheen, faint
+      injection-molding marks, believable contact shadows under every brick,
+      mild sensor noise. The background beyond the baseplate may become a
+      plausible desk scene, slightly out of focus.
+
+  - id: studio_product
+    aggressiveness: low
+    prompt: >
+      Convert this render into a clean studio product photograph of the same
+      Lego build: softbox lighting, gentle gradient background outside the
+      baseplate, accurate saturated Lego colors, crisp focus on every brick,
+      physically plausible soft shadows and faint reflections on the surface
+      the baseplate rests on.
+
+  - id: playroom_carpet
+    aggressiveness: medium
+    prompt: >
+      Restyle this render as a realistic indoor snapshot of the same Lego
+      build in a kids' playroom: the baseplate rests on a low-pile carpet or
+      wooden floor, warm ambient light, a hint of toys or furniture blurred in
+      the far background outside the baseplate. Keep every brick sharp,
+      clearly colored, and fully legible.
+
+  - id: evening_lamp
+    aggressiveness: medium
+    prompt: >
+      Make this look like a photo taken in the evening under a warm desk lamp:
+      directional warm key light, cooler dim ambient fill, realistic plastic
+      specular highlights on brick tops and studs, long soft shadows, slight
+      vignette and mild camera grain. All bricks must stay clearly
+      distinguishable by color.

@@ -1,0 +1,5 @@
+include: _gr_template.yaml
+task: gr_multihopspatial
+dataset_kwargs:
+  data_files:
+    test: grounded_reasoning/items/multihopspatial.jsonl

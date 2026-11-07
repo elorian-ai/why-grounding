@@ -1,0 +1,5 @@
+# Counting: decoded greedily, once.
+group: gr_greedy
+task:
+  - gr_countqa
+  - gr_fsc147

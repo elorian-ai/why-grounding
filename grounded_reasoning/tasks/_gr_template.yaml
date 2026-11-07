@@ -1,0 +1,31 @@
+# Shared settings of every gr_* task. Each task yaml adds its name and item list; data_files paths are relative to
+# the repository root (lmms-eval resolves them against the working directory; evaluate.py runs from there).
+dataset_path: json
+test_split: test
+output_type: generate_until
+doc_to_visual: !function grounded_reasoning.benchmarks.doc_to_visual
+doc_to_text: !function grounded_reasoning.benchmarks.doc_to_text
+doc_to_messages: !function grounded_reasoning.benchmarks.doc_to_messages
+doc_to_target: !function grounded_reasoning.benchmarks.doc_to_target
+process_results: !function grounded_reasoning.benchmarks.process_results
+# The scorer sees the response with these reasoning blocks removed (also lmms-eval's command-line default).
+reasoning_tags: [["<think>", "</think>"], ["<analysis>", "</analysis>"]]
+# Sampled decoding; evaluate.py seeds each request with seed_base + doc_id. Counting tasks override (greedy).
+generation_kwargs:
+  max_new_tokens: 8192
+  temperature: 1.0
+  top_p: 1.0
+  do_sample: true
+  seed_base: 1000
+metric_list:
+  - metric: acc_raw
+    aggregation: mean
+    higher_is_better: true
+  - metric: parse_rate
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_parsed
+    aggregation: !function grounded_reasoning.benchmarks.agg_acc_parsed
+    higher_is_better: true
+metadata:
+  version: 1.0

@@ -1,0 +1,12 @@
+# Spatial reasoning and fine-grained perception: decoded at temperature 1, once per decode seed (1000, 2000, 3000).
+group: gr_sampled
+task:
+  - gr_spatialmqa
+  - gr_multihopspatial
+  - gr_embspatial
+  - gr_vsr
+  - gr_omnispatial
+  - gr_erqa
+  - gr_vstar
+  - gr_mmerw
+  - gr_treebench

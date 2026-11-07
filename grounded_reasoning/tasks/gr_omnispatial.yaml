@@ -1,0 +1,7 @@
+include: _gr_template.yaml
+task: gr_omnispatial
+dataset_kwargs:
+  data_files:
+    test: grounded_reasoning/items/omnispatial.jsonl
+# the committed list has no question text; this swaps in the full list restored by grounded_reasoning.benchmarks
+process_docs: !function grounded_reasoning.benchmarks.load_restored_items

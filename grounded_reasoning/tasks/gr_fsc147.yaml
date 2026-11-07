@@ -1,0 +1,5 @@
+include: _gr_counting_template.yaml
+task: gr_fsc147
+dataset_kwargs:
+  data_files:
+    test: grounded_reasoning/items/fsc147.jsonl

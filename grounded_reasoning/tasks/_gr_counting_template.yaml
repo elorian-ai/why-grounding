@@ -1,0 +1,21 @@
+# Counting tasks: greedy decoding, plus close_raw (|pred - gold| <= 1 + 5% of gold).
+include: _gr_template.yaml
+generation_kwargs:
+  max_new_tokens: 8192
+  temperature: 0.0
+  top_p: 1.0
+  do_sample: false
+  seed_base: 1000
+metric_list:
+  - metric: acc_raw
+    aggregation: mean
+    higher_is_better: true
+  - metric: close_raw
+    aggregation: mean
+    higher_is_better: true
+  - metric: parse_rate
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_parsed
+    aggregation: !function grounded_reasoning.benchmarks.agg_acc_parsed
+    higher_is_better: true

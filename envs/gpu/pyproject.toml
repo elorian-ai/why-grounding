@@ -1,0 +1,40 @@
+[project]
+name = "gr-gpu"
+version = "0.1.0"
+description = "GPU steps except RL: SFT (LLaMA-Factory), evaluation and decode-time randomization (vLLM), the RL judge"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "grounded-reasoning",
+    "vllm==0.25.1",
+    "torch==2.11.0",
+    "torchvision==0.26.0",
+    "torchaudio==2.11.0",
+    "transformers==5.8.0",  # the newest LLaMA-Factory 0bbe481 accepts; vLLM 0.25.1 needs >=5.5.3
+    "tokenizers==0.22.2",
+    "huggingface-hub==1.23.0",
+    "accelerate==1.14.0",
+    "pillow==12.3.0",
+    "numpy==2.3.5",
+    "pyarrow==25.0.0",
+    "llamafactory",
+    "deepspeed==0.19.2",
+    "datasets==4.0.0",
+    "peft==0.19.1",
+    "trl==0.24.0",
+    "qwen-vl-utils==0.0.14",
+    "tensorboard==2.21.0",
+    "torchdata==0.11.0",
+    "tyro==0.8.14",
+    "lmms-eval",
+    "decord==0.6.0",  # imported at module level by lmms-eval's vllm model
+]
+
+[tool.uv]
+package = false
+environments = ["sys_platform == 'linux'"]
+override-dependencies = ["accelerate==1.14.0", "peft==0.19.1", "av==18.0.0", "pillow==12.3.0", "transformers==5.8.0"]
+
+[tool.uv.sources]
+grounded-reasoning = { path = "../..", editable = true }
+llamafactory = { git = "https://github.com/hiyouga/LLaMA-Factory", rev = "0bbe481e6e621527284d37f1e13a6b9556c303ec" }
+lmms-eval = { git = "https://github.com/EvolvingLMMs-Lab/lmms-eval", rev = "2c08ee554d8194f6409e2ccd248bd1bbde2a76eb" }

@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this code or BrickVision, please cite the paper below."
+title: "Where and Why is Grounded Reasoning Useful?"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/elorian-ai/why-grounding"
+url: "https://elorian.ai/blog/why-grounding"
+authors:
+  - family-names: Yan
+    given-names: David
+  - family-names: Xue
+    given-names: Le
+  - family-names: Huang
+    given-names: Forrest
+  - family-names: Zhang
+    given-names: Qiuyi
+  - family-names: Tran
+    given-names: Dustin
+  - family-names: Dai
+    given-names: Andrew M.
+  - family-names: Yang
+    given-names: Yinfei
+preferred-citation:
+  type: article
+  title: "Where and Why is Grounded Reasoning Useful?"
+  journal: "arXiv preprint arXiv:2611.08485"
+  url: "https://arxiv.org/abs/2611.08485"
+  year: 2026
+  authors:
+    - family-names: Yan
+      given-names: David
+    - family-names: Xue
+      given-names: Le
+    - family-names: Huang
+      given-names: Forrest
+    - family-names: Zhang
+      given-names: Qiuyi
+    - family-names: Tran
+      given-names: Dustin
+    - family-names: Dai
+      given-names: Andrew M.
+    - family-names: Yang
+      given-names: Yinfei
